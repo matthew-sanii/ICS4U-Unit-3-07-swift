@@ -74,9 +74,12 @@ class Truck: Vehicle {
 
   private var plate: String = "123qwe"
 
+  private var truckSpeed: Int = 0
+
   func accelerates() -> Int {
-    super.accelerate()
-    return super.accelerate()
+    truckSpeed = super.accelerate()
+    truckSpeed = super.accelerate()
+    return truckSpeed
   }
 
   func provideAir() -> String {
