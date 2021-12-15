@@ -165,11 +165,11 @@ if colorInput == 0 && plateInput != 0 && startCadence != -1 {
   print("Bike speed after accelerating is", bike.accelerate())
   print("Truck speed after accelerating is", truck.accelerates())
   bike.setCadence(startCadence)
-  print(bike.ringBell())
-  print(truck.provideAir())
-  print("Bike cadence is now", bike.getCadence())
-  print("Truck plate info is", truck.getPlate())
-  print("Truck color is", truck.getColor())
+  print("The bike's bell goes", bike.ringBell())
+  print("The truck's horn goes", truck.provideAir())
+  print("The bike's cadence is now", bike.getCadence())
+  print("The truck's plate number is", truck.getPlate())
+  print("The truck's color is", truck.getColor())
 } else {
   print("You must input strings for truck color and plate number, and int for bike cadence.")
 }
