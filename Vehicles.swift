@@ -55,14 +55,29 @@ class Bike: Vehicle {
 
   private var cadence: Int = 1
 
+  /**
+  * ringBell method, which returns a Ding! string.
+  *
+  * @return Ding!
+  */
   func ringBell() -> String {
     return "Ding!"
   }
 
+  /**
+  * setCadence method, to set new cadence.
+  *
+  * @param newCadence the new cadence.
+  */
   func setCadence(_ newCadence: Int) {
     cadence = newCadence
   }
 
+  /**
+  * The getCadence method.
+  *
+  * @return cadence.
+  */
   func getCadence() -> Int {
     return cadence
   }
@@ -76,28 +91,58 @@ class Truck: Vehicle {
 
   private var truckSpeed: Int = 0
 
+  /**
+  * The accelerates method.
+  *
+  * @return truckSpeed.
+  */
   func accelerates() -> Int {
     truckSpeed = super.accelerate()
     truckSpeed = super.accelerate()
     return truckSpeed
   }
 
+  /**
+  * The provideAir method.
+  *
+  * @return Honk Honk!
+  */
   func provideAir() -> String {
     return "Honk Honk!"
   }
 
+  /**
+  * The plateInfo method.
+  *
+  * @param plateNum the new plate number.
+  */
   func plateInfo(_ plateNum: String) {
     plate = plateNum
   }
 
+  /**
+  * The getPlate method.
+  *
+  * @return plate
+  */
   func getPlate() -> String {
     return plate
   }
 
+  /**
+  * The setColor method.
+  *
+  * @param newColor the new color of the truck
+  */
   func setColor(_ newColor: String) {
     colour = newColor
   }
 
+  /**
+  * The getColor method.
+  *
+  * @return colour.
+  */
   func getColor() -> String {
     return colour
   }
